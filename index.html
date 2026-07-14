@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Jolly John | Cybersecurity Portfolio</title>
+    <meta name="description" content="Alan Jolly John - Cybersecurity practitioner, researcher, and developer. Top 1% on TryHackMe.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Interactive Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">AJJ.<span>SEC</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="ALAN JOLLY JOHN">ALAN JOLLY JOHN</h1>
+                <p class="subtitle terminal-typing">Cybersecurity Practitioner & Developer</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="cyber-btn">View Deployments</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section reveal">
+            <h2 class="section-title">01. <span class="highlight">Sys.Info</span></h2>
+            <div class="glass-card about-card">
+                <p>Final-year BCA student and eJPT-certified cybersecurity practitioner ranked in the <strong>Top 1% globally on TryHackMe</strong>. With hands-on experience in penetration testing, web application security, vulnerability assessment, and security-focused software development.</p>
+                <p>First author of an IEEE-published cybersecurity research paper and developer of an encryption-first secure file storage platform.</p>
+                <div class="education-block">
+                    <h3>Education</h3>
+                    <p><strong>BCA</strong> - Manav Rachna International Institute of Research and Studies (2023 - 2026)</p>
+                    <span class="badge">Dean's List – Top 5% of Programme</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section reveal">
+            <h2 class="section-title">02. <span class="highlight">Capabilities</span></h2>
+            <div class="skills-grid">
+                <div class="glass-card skill-category">
+                    <h3>Cybersecurity</h3>
+                    <div class="tags">
+                        <span>Penetration Testing</span>
+                        <span>Web App Security</span>
+                        <span>Vuln Assessment</span>
+                        <span>Network/Cloud Security</span>
+                        <span>Cryptography</span>
+                        <span>OSINT</span>
+                        <span>Threat Modelling</span>
+                        <span>CTF</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <h3>Tools</h3>
+                    <div class="tags">
+                        <span>Burp Suite</span>
+                        <span>Nmap</span>
+                        <span>Metasploit</span>
+                        <span>Wireshark</span>
+                        <span>Kali Linux</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <h3>Development & AI</h3>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>C/C++</span>
+                        <span>Java</span>
+                        <span>Dart</span>
+                        <span>SQL</span>
+                        <span>Django / DRF</span>
+                        <span>Flutter</span>
+                        <span>Machine Learning / NLP</span>
+                        <span>BERT / PyTorch</span>
+                        <span>Gemini API</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <h3>Security Engineering</h3>
+                    <div class="tags">
+                        <span>AES-256-GCM</span>
+                        <span>Secure File Storage</span>
+                        <span>Authenticated Encryption</span>
+                        <span>Streaming File Reconstruction</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section reveal">
+            <h2 class="section-title">03. <span class="highlight">Deployments</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card tilt-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3>Schrödinger File System</h3>
+                        <p class="tech-stack">Django | DRF | Flutter | AES-256-GCM</p>
+                        <ul class="project-details">
+                            <li>Encryption-first secure file storage platform that fragments files into AES-256-GCM-encrypted chunks and logically decouples chunk data.</li>
+                            <li>Implemented authenticated encryption providing confidentiality and integrity protection for stored file chunks.</li>
+                            <li>Designed streaming, on-the-fly file reconstruction during secure downloads to minimize persistent server-side exposure of plaintext files.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="glass-card project-card tilt-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3>SkipQ – Scan & Pay Smart Checkout</h3>
+                        <p class="tech-stack">Flutter | Django | DRF | PostgreSQL | Gemini 2.5 Flash</p>
+                        <ul class="project-details">
+                            <li>Developed a mobile Scan & Pay self-checkout application enabling customers to manage digital carts and complete checkout workflows.</li>
+                            <li>Built REST APIs for authentication, product management, cart operations, and checkout operations.</li>
+                            <li>Integrated Gemini 2.5 Flash as an AI-assisted image-verification checkpoint and deployed on Render.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Research Section -->
+        <section id="experience" class="section experience-section reveal">
+            <h2 class="section-title">04. <span class="highlight">Exp_&_Research</span></h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>AI-Driven Techniques for Web Search Vulnerability Identification</h3>
+                        <span class="timeline-date">Nov 2025 | IEEE, ISCS 2025</span>
+                        <p>First author of an IEEE-published cybersecurity research paper investigating AI-driven identification of data poisoning, algorithmic bias, and privacy leakage vulnerabilities in web search systems.</p>
+                        <p>Reported 92% anomaly-detection accuracy, 85% adversarial-testing sensitivity, and 90% semantic-analysis precision. DOI: 10.1109/ISCS69371.2025.11386307.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Intern</h3>
+                        <span class="timeline-date">Sep 2022 - Dec 2022 | Genstark</span>
+                        <p>Prepared and annotated image datasets using LabelImg and developed CSV-based data pipelines for object-detection model training. Contributed to model training, evaluation, and deployment workflows for a smart-glasses system designed to assist visually impaired users.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Subject Matter Expert - Cybersecurity</h3>
+                        <span class="timeline-date">Mar 2026 | DG Sentinels, MRIIRS</span>
+                        <p>Recognized for Top 1% global TryHackMe ranking, eJPT certification, IEEE publication, and contributions to the cybersecurity community.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>LinkedIn Campus Ambassador</h3>
+                        <span class="timeline-date">2024 - 2025 | LinkedIn</span>
+                        <p>Promoted professional networking, career-development resources, and LinkedIn platform features to the student community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Volunteering Section -->
+        <section id="volunteering" class="section experience-section reveal">
+            <h2 class="section-title">05. <span class="highlight">Leadership_&_Volunteering</span></h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Cybersecurity Event Organizer & CTF Challenge Creator</h3>
+                        <span class="timeline-date">DG Sentinels</span>
+                        <p>Helped organize Hack or Crack 2.0 and designed cryptography-based CTF challenges to assess participants' cybersecurity knowledge and problem-solving skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Volunteer Event Photographer</h3>
+                        <span class="timeline-date">2024 - 2026 | Media Shala</span>
+                        <p>Contributed to official photography and visual documentation for the Manav Rachna Convocation Ceremonies 2024 and 2025-26 as part of the university media coverage team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Awards Section -->
+        <section id="certifications" class="section cert-section reveal">
+            <h2 class="section-title">06. <span class="highlight">Certs_&_Awards</span></h2>
+            <div class="cert-grid">
+                <div class="glass-card cert-card">eJPT (INE Certified Junior Penetration Tester)</div>
+                <div class="glass-card cert-card">ICCA (INE Certified Cloud Associate)</div>
+                <div class="glass-card cert-card">Google Cybersecurity Professional Certificate</div>
+                <div class="glass-card cert-card">Azure AI Fundamentals (AI-900)</div>
+                <div class="glass-card cert-card">1st Place - "Hack or Crack" CTF (DG Sentinels)</div>
+                <div class="glass-card cert-card">3rd Place - "Race2Root" CTF (Innoskill 2025)</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="logo">AJJ.<span>SEC</span></h2>
+            <div class="social-links">
+                <a href="mailto:alanjolly004@gmail.com" class="social-link" target="_blank" rel="noopener noreferrer">Email</a>
+                <a href="https://linkedin.com/in/alan-jolly-john-446838251" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="copyright">&copy; 2026 Alan Jolly John. Secure by Design.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
