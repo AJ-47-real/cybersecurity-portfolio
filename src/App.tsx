@@ -36,6 +36,7 @@ function App() {
     })
 
     function tick() {
+      if (!dot) return
       cx += (mx - cx) * 0.18
       cy += (my - cy) * 0.18
       dot.style.left = cx + 'px'
